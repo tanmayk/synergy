@@ -1,0 +1,67 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt DateTime @default(now())
+  event     Event[]
+  firstName String?
+  id        String   @id @default(cuid())
+  lastName  String?
+  password  String
+  roles     Json
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Event {
+  createdAt   DateTime           @default(now())
+  dateDetails Json
+  description String?
+  endDate     DateTime?
+  eventLog    EventLog[]
+  eventType   EnumEventEventType
+  gallery     Json?
+  geoLocation Json?
+  headerImage Json?
+  id          String             @id @default(cuid())
+  location    Json?
+  startDate   DateTime
+  state       EnumEventState
+  status      Boolean?
+  summary     String?
+  title       String
+  updatedAt   DateTime           @updatedAt
+  volunteers  User[]
+}
+
+model EventLog {
+  createdAt DateTime            @default(now())
+  event     Event               @relation(fields: [eventId], references: [id])
+  eventId   String
+  id        String              @id @default(cuid())
+  logType   EnumEventLogLogType
+  message   String
+}
+
+enum EnumEventEventType {
+  oneDay
+  multiDay
+}
+
+enum EnumEventState {
+  draft
+  underReview
+  rejected
+  published
+}
+
+enum EnumEventLogLogType {
+  eventRejected
+  eventPublished
+}
