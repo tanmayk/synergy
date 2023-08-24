@@ -1,0 +1,254 @@
+[
+  {
+    "role": "authenticated",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "EventLog",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "EventLog",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "EventLog",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "EventLog",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "EventLog",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "EventLog",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "EventLog",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "EventLog",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "EventLog",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "EventLog",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "EventLog",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "EventLog",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "authenticated",
+    "resource": "EventLog",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "anonymous",
+    "resource": "EventLog",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "reviewer",
+    "resource": "EventLog",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]
